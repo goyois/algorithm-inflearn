@@ -10,28 +10,25 @@ import java.util.*;
 public class DemoApplication {
 	public static void main(String[] args) {
 
-		String s = "banana";
-		int[] answer = new int[s.length()];
-		HashMap<Character, Integer> map = new HashMap<>();
+		int[] arr = {2,1,3,4,1};
+		int[] answer = new int[arr.length];
+		HashSet<Integer> set = new HashSet<>();
 
-		for (int i = 0; i < s.length(); i++) {
-			char c = s.charAt(i);
-			if (map.containsKey(c)) {
-				System.out.println(true);
-				int v = map.get(c);
-				answer[i] = i - v;
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr.length; j++) {
+				if (i != j) {
+					int num = arr[i] + arr[j];
+					System.out.println(num);
+					set.add(num);
+				}
 			}
-			else answer[i] = -1;
-
-			map.put(c,i);
 		}
 
+		List<Integer> tmpList = new ArrayList<>(set);
+		Collections.sort(tmpList);
 
-
-		for (int i : answer) {
-			System.out.println(i);
-		}
-
+		System.out.println(set);
 
 
 		SpringApplication.run(DemoApplication.class, args);
