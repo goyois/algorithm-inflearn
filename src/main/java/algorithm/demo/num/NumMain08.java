@@ -3,22 +3,26 @@ package algorithm.demo.num;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+//8.등수 구하기 (나의 풀이)
+public class NumMain08 {
 
     public ArrayList<Integer> solution(int n, int[] arr) {
         ArrayList<Integer> answer = new ArrayList<>();
-        answer.add(arr[0]);
 
-        for (int i = 1; i < n; i++) {
-            if (arr[i] > arr[i-1]) {
-                answer.add(arr[i]);
+        for (int i = 0; i < n; i++) {
+            int rank = 1;
+            for (int j = 0; j < n; j++) {
+                if (arr[i] < arr[j]) {
+                    rank++;
+                }
             }
+            answer.add(rank);
         }
         return answer;
     }
 
     public static void main(String[] args){
-        algorithm.demo.num.Main T = new algorithm.demo.num.Main();
+        NumMain08 T = new NumMain08();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];

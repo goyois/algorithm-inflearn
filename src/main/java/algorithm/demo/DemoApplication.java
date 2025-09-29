@@ -1,5 +1,6 @@
 package algorithm.demo;
 
+import org.apache.tomcat.util.net.jsse.JSSEUtil;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,25 +11,29 @@ import java.util.*;
 public class DemoApplication {
 	public static void main(String[] args) {
 
-		int[] arr = {2,1,3,4,1};
-		int[] answer = new int[arr.length];
-		HashSet<Integer> set = new HashSet<>();
+		int[] emergency = {3, 76, 24};
+		Integer[] tmp = new Integer[emergency.length];
+		int[] answer = new int[emergency.length];
+
+		for (int i = 0; i < emergency.length; i++) {
+			tmp[i] = emergency[i];
+		}
+		Arrays.sort(tmp,Collections.reverseOrder());
 
 
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr.length; j++) {
-				if (i != j) {
-					int num = arr[i] + arr[j];
-					System.out.println(num);
-					set.add(num);
+		for (int i = 0; i < emergency.length; i++) {
+			for (int j = 0; j < tmp.length; j++) {
+				if (emergency[i] == tmp[j]) {
+					answer[i] = j+1;
 				}
 			}
 		}
 
-		List<Integer> tmpList = new ArrayList<>(set);
-		Collections.sort(tmpList);
+		for (int x : answer) {
+			System.out.println(x);
+		}
 
-		System.out.println(set);
+
 
 
 		SpringApplication.run(DemoApplication.class, args);

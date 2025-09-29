@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 //4.피보나치 수열
-public class Main04 {
+public class NumMain04 {
 
     public ArrayList<Integer> solution(int n) {
         ArrayList<Integer> answer = new ArrayList<>();
@@ -24,7 +24,7 @@ public class Main04 {
 
 
     public static void main(String[] args){
-        algorithm.demo.num.Main04 T = new algorithm.demo.num.Main04();
+        NumMain04 T = new NumMain04();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for (int x : T.solution(n)) {

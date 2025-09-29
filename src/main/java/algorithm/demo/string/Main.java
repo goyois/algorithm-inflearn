@@ -32,8 +32,8 @@ public class Main {
 
         for (String x : s) {
             int len = x.length();
-            if (len > m) {
-                m=len;
+            if (m < len) {
+                m = len;
                 answer = x;
             }
         }

@@ -1,9 +1,8 @@
 package algorithm.demo.num;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main02 {
+public class NumMain02 {
 
     public int solution(int n, int[] arr) {
         int answer = 1;
@@ -19,7 +18,7 @@ public class Main02 {
     }
 
     public static void main(String[] args){
-        algorithm.demo.num.Main02 T = new algorithm.demo.num.Main02();
+        NumMain02 T = new NumMain02();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];

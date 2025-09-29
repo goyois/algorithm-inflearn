@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 
 
-public class Main03 {
+public class NumMain03 {
 
     public ArrayList<String> solution(int n, int[] arr1,int[] arr2) {
         ArrayList<String> answer = new ArrayList<>();
@@ -36,7 +36,7 @@ public class Main03 {
     }
 
     public static void main(String[] args){
-        Main03 T = new Main03();
+        NumMain03 T = new NumMain03();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr1 = new int[n];
