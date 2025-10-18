@@ -2,7 +2,7 @@ package algorithm.demo.two_pointers;
 
 
 import java.util.*;
-
+//1.두 배열 합치기
 //투포인터를 활용해 2개의 오름차순된 배열의 값을 1개의 배열로 통합하여 오름차순 정렬하는 방법
 public class Main {
     public static void main(String[] args) {

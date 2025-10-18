@@ -32,18 +32,26 @@ public class DemoApplication {
 //		list.toArray(answer);
 
 
+		String[] cards1 = {"i", "water", "drink"};
+		String[] cards2 = {"want", "to"};
+		String[] goal = {"i", "want", "to", "drink", "water"};
 
 
+		String answer = "Yes";
+		int p1= 0; int p2 = 0;
+
+		for (String g : goal) {
+			if (p1 < cards1.length && cards1[p1].equals(g)) {
+				p1++;
+			} else if (p2 < cards2.length && cards2[p2].equals(g)) {
+				p2++;
+			} else {
+				answer = "No";
+			}
+		}
 
 
-
-
-
-
-
-
-
-
+		System.out.println(answer);
 
 		SpringApplication.run(DemoApplication.class, args);
 	}
