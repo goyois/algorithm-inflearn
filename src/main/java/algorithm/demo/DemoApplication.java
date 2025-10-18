@@ -1,6 +1,7 @@
 package algorithm.demo;
 
 import org.apache.tomcat.util.net.jsse.JSSEUtil;
+import org.springframework.aop.scope.ScopedProxyUtils;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -11,27 +12,35 @@ import java.util.*;
 public class DemoApplication {
 	public static void main(String[] args) {
 
-		int[] emergency = {3, 76, 24};
-		Integer[] tmp = new Integer[emergency.length];
-		int[] answer = new int[emergency.length];
+//		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+//		int num = Integer.parseInt(bf.readLine());
+//		String[] arr = new String[num];
+//		for (int j = 0; j < num; j++) {
+//			arr[j] = bf.readLine();
+//		}
 
-		for (int i = 0; i < emergency.length; i++) {
-			tmp[i] = emergency[i];
-		}
-		Arrays.sort(tmp,Collections.reverseOrder());
+//		ArrayList<Integer> list = new ArrayList<>(Arrays.stream(arr)
+//				.boxed()
+//				.collect(Collectors.toList()));
+//
+//		int[] answer = list.stream()
+//				.mapToInt(Integer::intValue)
+//				.toArray();
+
+		//for문 없이 리스트를 배열로
+//		String[] answer = new String[list.size()];
+//		list.toArray(answer);
 
 
-		for (int i = 0; i < emergency.length; i++) {
-			for (int j = 0; j < tmp.length; j++) {
-				if (emergency[i] == tmp[j]) {
-					answer[i] = j+1;
-				}
-			}
-		}
 
-		for (int x : answer) {
-			System.out.println(x);
-		}
+
+
+
+
+
+
+
+
 
 
 
