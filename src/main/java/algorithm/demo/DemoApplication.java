@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.*;
+import java.util.stream.*;
 
 
 @SpringBootApplication
@@ -32,26 +33,31 @@ public class DemoApplication {
 //		list.toArray(answer);
 
 
-		String[] cards1 = {"i", "water", "drink"};
-		String[] cards2 = {"want", "to"};
-		String[] goal = {"i", "want", "to", "drink", "water"};
 
 
-		String answer = "Yes";
-		int p1= 0; int p2 = 0;
+		int[] nums = {3, 3, 3, 2, 2, 2};
 
-		for (String g : goal) {
-			if (p1 < cards1.length && cards1[p1].equals(g)) {
-				p1++;
-			} else if (p2 < cards2.length && cards2[p2].equals(g)) {
-				p2++;
-			} else {
-				answer = "No";
+		int n = nums.length / 2; //구해야하는 포켓몬 종류 수
+		int answer = 0;
+		HashSet<Integer> set = Arrays.stream(nums)
+						.boxed()
+						.collect(Collectors.toCollection(HashSet::new));
+		for (int i = 0; i < set.size(); i++) {
+			if (i < n) {
+				answer++;
 			}
 		}
 
 
-		System.out.println(answer);
+
+
+
+
+
+
+
+
+
 
 		SpringApplication.run(DemoApplication.class, args);
 	}
