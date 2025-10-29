@@ -2,9 +2,9 @@ package algorithm.demo.sec3.two_pointers;
 
 import java.util.Scanner;
 
+//31.4. 연속부분수열 (범위 & 시간 복잡도 문제)
 public class Main03 {
     public static void main(String[] args) {
-
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -16,8 +16,6 @@ public class Main03 {
 
         
         int answer = 0;
-
-
         int sum = 0;
         int lt = 0;
 
@@ -30,6 +28,5 @@ public class Main03 {
             }
         }
 
-        System.out.println(answer);
     }
 }
