@@ -1,7 +1,5 @@
-package algorithm.demo.string;
+package algorithm.demo.sec1.string;
 
-import java.util.HashSet;
-import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 

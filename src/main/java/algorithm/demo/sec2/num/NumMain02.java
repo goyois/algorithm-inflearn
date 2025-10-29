@@ -1,26 +1,23 @@
-package algorithm.demo.num;
+package algorithm.demo.sec2.num;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
-public class NumMain07 {
+public class NumMain02 {
 
     public int solution(int n, int[] arr) {
-        int answer = 0;
-        int cnt = 0; //정답 횟수
-
-        for (int i = 0; i <n; i++) {
-            if (arr[i] == 1) {
-                    cnt++;
-                    answer += cnt;
+        int answer = 1;
+        int max = arr[0];
+        for (int i = 1; i < n; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+                answer++;
             }
-            else cnt = 0;
         }
         return answer;
     }
 
     public static void main(String[] args){
-        NumMain07 T = new NumMain07();
+        NumMain02 T = new NumMain02();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];

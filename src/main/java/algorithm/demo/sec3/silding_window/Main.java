@@ -1,4 +1,4 @@
-package algorithm.demo.silding_window;
+package algorithm.demo.sec3.silding_window;
 
 import java.util.*;
 public class Main {

@@ -1,4 +1,4 @@
-package algorithm.demo.num;
+package algorithm.demo.sec2.num;
 
 public class NumMain10 {
 

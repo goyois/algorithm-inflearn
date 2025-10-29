@@ -1,4 +1,4 @@
-package algorithm.demo.two_pointers;
+package algorithm.demo.sec3.two_pointers;
 
 
 import java.util.*;

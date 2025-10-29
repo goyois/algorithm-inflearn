@@ -33,30 +33,39 @@ public class DemoApplication {
 //		list.toArray(answer);
 
 
+		//배열 원소를 셋으로 초기화
+//		HashSet<Integer> set = Arrays.stream(nums)
+//				.boxed()
+//				.collect(Collectors.toCollection(HashSet::new));
 
 
-		int[] nums = {3, 3, 3, 2, 2, 2};
 
-		int n = nums.length / 2; //구해야하는 포켓몬 종류 수
-		int answer = 0;
-		HashSet<Integer> set = Arrays.stream(nums)
-						.boxed()
-						.collect(Collectors.toCollection(HashSet::new));
-		for (int i = 0; i < set.size(); i++) {
-			if (i < n) {
-				answer++;
-			}
+
+//		1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ...
+//		2번 수포자가 찍는 방식: 2 1,  2 3, 2 4, 2 5,
+//		3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
+
+
+
+		int[] numbers = {6, 10, 2};
+		String answer = "";
+
+		ArrayList<String> strList = new ArrayList<>();
+		ArrayList<String> list = new ArrayList<>();
+
+		for (int n : numbers) {
+			strList.add(String.valueOf(n));
 		}
 
+		for (int i = 0; i < strList.size(); i++) {
+			String s = strList.get(i);
+			for (int j = i+1; j < strList.size(); j++) {
+				s += strList.get(j);
+			}
+			list.add(s);
+		}
 
-
-
-
-
-
-
-
-
+		System.out.println(list);
 
 
 		SpringApplication.run(DemoApplication.class, args);
