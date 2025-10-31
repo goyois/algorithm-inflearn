@@ -45,28 +45,8 @@ public class DemoApplication {
 //		2번 수포자가 찍는 방식: 2 1,  2 3, 2 4, 2 5,
 //		3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
 
-
-
-		int[] numbers = {6, 10, 2};
-		String answer = "";
-
-		ArrayList<String> strList = new ArrayList<>();
-		ArrayList<String> list = new ArrayList<>();
-
-		for (int n : numbers) {
-			strList.add(String.valueOf(n));
-		}
-
-		for (int i = 0; i < strList.size(); i++) {
-			String s = strList.get(i);
-			for (int j = i+1; j < strList.size(); j++) {
-				s += strList.get(j);
-			}
-			list.add(s);
-		}
-
-		System.out.println(list);
-
+		int n = 3;
+		System.out.println(n / 1234567);
 
 		SpringApplication.run(DemoApplication.class, args);
 	}

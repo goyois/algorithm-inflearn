@@ -12,7 +12,9 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int sum = 0; int answer = 0;
+
+        int sum = 0;
+        int answer = 0;
 
         //첫 합계 구함 idx 0+1+2
         for (int i = 0; i < k; i++) {
