@@ -2,6 +2,7 @@ package algorithm.demo.sec4;
 
 import java.util.*;
 
+//hash 학급 회장
 public class Main {
     public static void main(String[] args) {
 
@@ -10,9 +11,8 @@ public class Main {
         String s = sc.next();
 
         HashMap<Character,Integer> map = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            map.put(c,map.getOrDefault(c,0) +1);
+        for (char x : s.toCharArray()) {
+            map.put(x,map.getOrDefault(x,0)+1);
         }
 
         char answer = ' ';
