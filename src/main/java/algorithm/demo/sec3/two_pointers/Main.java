@@ -28,6 +28,8 @@ public class Main {
                 list.add(a[p1++]);
             } else list.add(b[p2++]);
         }
+
+
         //p1 과 p2 중 거짓인 포인터는 알 수 없으므로 추가적인 while 문으로
         //나머지 원소를 다 넣어준다
         while (p1 < n) list.add(a[p1++]);

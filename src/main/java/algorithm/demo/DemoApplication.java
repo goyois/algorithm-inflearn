@@ -45,8 +45,11 @@ public class DemoApplication {
 //		2번 수포자가 찍는 방식: 2 1,  2 3, 2 4, 2 5,
 //		3번 수포자가 찍는 방식: 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, 3, 3, 1, 1, 2, 2, 4, 4, 5, 5, ...
 
-		int n = 3;
-		System.out.println(n / 1234567);
+
+		int s1 = 0;
+		int s2 = 0;
+		int s3 = 0;
+
 
 		SpringApplication.run(DemoApplication.class, args);
 	}
