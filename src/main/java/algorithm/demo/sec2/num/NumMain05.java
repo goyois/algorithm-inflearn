@@ -8,7 +8,7 @@ public class NumMain05 {
 
     public int solution(int n) {
         int answer = 0;
-        int[] ch = new int[n+1]; //n만큼 순회해야하므로 length+1 동적 배열 생성
+        int[] ch = new int[n+1]; //n의 개수만큼 순회해야하므로 length+1 동적 배열 생성
         for (int i = 2; i <= n; i++) {
             if (ch[i] == 0) {
                 answer++;
