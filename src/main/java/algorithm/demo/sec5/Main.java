@@ -2,6 +2,7 @@ package algorithm.demo.sec5;
 
 import java.util.*;
 
+//올바른 괄호
 public class Main {
     public static void main(String[] args) {
 
