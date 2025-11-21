@@ -15,6 +15,7 @@ public class Main05 {
         int answer = 0;
         Stack<Character> stack = new Stack<>();
 
+        
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '(') stack.push('(');
             else {
