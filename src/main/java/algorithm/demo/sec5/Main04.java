@@ -29,7 +29,6 @@ public class Main04 {
                     else if (c == '/') stack.push(lt/rt);
             }
         }
-
         answer = stack.get(0);
         System.out.println(answer);
     }
