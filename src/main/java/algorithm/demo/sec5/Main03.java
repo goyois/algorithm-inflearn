@@ -7,6 +7,19 @@ import java.util.Stack;
 public class Main03 {
     public static void main(String[] args) {
 
+        //input
+//        5  (5*5 2차원 배열 크기)
+//        0 0 0 0 0
+//        0 0 1 0 3
+//        0 2 5 0 1   (인형뽑기 안)
+//        4 2 4 4 2
+//        3 5 1 3 1
+
+//        8  (8번의 움직임)
+//        1 5 3 5 1 2 1 4
+
+
+
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[][] board = new int[n][n];
@@ -21,16 +34,6 @@ public class Main03 {
             moves[i] = sc.nextInt();
         }
 
-        //input
-//        5  (5*5 2차원 배열 크기)
-//        0 0 0 0 0
-//        0 0 1 0 3
-//        0 2 5 0 1   (인형뽑기 안)
-//        4 2 4 4 2
-//        3 5 1 3 1
-
-//        8  (8번의 움직임)
-//        1 5 3 5 1 2 1 4
 
 
         int answer = 0;

@@ -60,14 +60,6 @@ public class DemoApplication {
 
 
 
-		String s = "for    the last week";
-		String answer = "";
-		ArrayList<String> list = new ArrayList<>();
-
-		String[] arr = s.split(" ");
-
-		
-
 
 
 
