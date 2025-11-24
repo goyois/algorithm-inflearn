@@ -12,10 +12,11 @@ public class Main06 {
         int n = sc.nextInt();
         int k = sc.nextInt();
 
-        Queue<Integer> q = new LinkedList();
+        Queue<Integer> q = new LinkedList<>();
         for (int i = 1; i <= n; i++) {
             q.offer(i);
         }
+
 
         while (q.size() > 1) {
             for(int i = 1; i < k; i++){
