@@ -11,11 +11,12 @@ public class Main05 {
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         //()(((()())(())()))(())
+        //레이저가 등장할 때 스택의 갯수를 누적
 
         int answer = 0;
         Stack<Character> stack = new Stack<>();
 
-        
+
         for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == '(') stack.push('(');
             else {

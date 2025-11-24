@@ -56,6 +56,11 @@ public class DemoApplication {
 
 
 
+		int[] progresses = {95, 90, 99, 99, 80, 99};
+		int[] speeds = {1,1,1,1,1,1};
+		//return = 1, 3, 2
+
+
 
 
 
