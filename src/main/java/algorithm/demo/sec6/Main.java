@@ -4,8 +4,6 @@ import java.util.*;
 
 //정렬파트. 선택정렬
 public class Main {
-
-
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
